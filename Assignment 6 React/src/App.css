@@ -1,0 +1,83 @@
+/* =========================
+   App
+   ========================= */
+
+.app {
+    width: 100%;
+    min-height: 100vh;
+
+    background-color: #ffffff;
+}
+
+
+/* =========================
+   Main Content
+   ========================= */
+
+.app main {
+    width: 100%;
+}
+
+
+/* =========================
+   Shared Page Container
+   ========================= */
+
+.page-container {
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+
+/* =========================
+   Shared Section Heading
+   ========================= */
+
+.section-heading {
+    margin: 0;
+
+    color: #111111;
+
+    font-family: "Industry Test", sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+
+    line-height: 1.1;
+    letter-spacing: 0.3px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   Responsive
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .page-container {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .section-heading {
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .page-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .section-heading {
+        font-size: 24px;
+    }
+}

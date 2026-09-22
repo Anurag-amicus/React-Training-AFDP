@@ -1,0 +1,156 @@
+/* =========================
+   Featured Products
+   ========================= */
+
+.featured-section {
+    width: 100%;
+
+    padding: 30px 24px 10px;
+
+    background-color: #ffffff;
+}
+
+.featured-container {
+    width: 100%;
+    max-width: 1150px;
+
+    margin: 0 auto;
+}
+
+.featured-section .section-heading {
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   Carousel
+   ========================= */
+
+.featured-carousel {
+    position: relative;
+
+    width: 100%;
+}
+
+.featured-carousel-viewport {
+    width: 100%;
+
+    overflow: hidden;
+}
+
+.featured-carousel .swiper {
+    width: 100%;
+
+    padding: 5px 2px 50px;
+}
+
+.featured-carousel .swiper-slide {
+    height: auto;
+
+    display: flex;
+}
+
+.featured-carousel .swiper-slide .product-card {
+    width: 100%;
+}
+
+
+/* =========================
+   Navigation Arrows
+   ========================= */
+
+.featured-arrow {
+    position: absolute;
+
+    top: 50%;
+
+    width: 48px;
+    height: 48px;
+
+    margin-top: -25px;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+    border: none;
+
+    color: #ff5405;
+
+    font-family: Arial, sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    z-index: 20;
+}
+
+.featured-arrow-prev {
+    left: -34px;
+}
+
+.featured-arrow-next {
+    right: -34px;
+}
+
+
+/* =========================
+   Pagination
+   ========================= */
+
+.featured-carousel .swiper-pagination {
+    bottom: 10px;
+}
+
+.featured-carousel .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+
+    margin: 0 4px !important;
+
+    background-color: #535252;
+
+    opacity: 1;
+}
+
+.featured-carousel .swiper-pagination-bullet-active {
+    background-color: #ff5405;
+}
+
+
+/* =========================
+   Responsive
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .featured-section {
+        padding: 45px 18px 60px;
+    }
+
+    .featured-section .section-heading {
+        margin-bottom: 24px;
+    }
+
+    .featured-arrow {
+        width: 24px;
+        height: 24px;
+
+        margin-top: -25px;
+
+        font-size: 24px;
+    }
+
+    .featured-arrow-prev {
+        left: 2px;
+    }
+
+    .featured-arrow-next {
+        right: 2px;
+    }
+}

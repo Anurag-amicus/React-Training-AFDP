@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #ffffff;
+    font-family: Consolas, sans-serif;
+    color: #202633;
+}
+
+.app {
+    width: min(1170px, calc(100% - 36px));
+    margin: 25px auto;
+    padding: 14px 26px 28px;
+    background-color: #ffffff;
+}
+
+.app h1 {
+    margin: 0 0 22px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.assignment-subtitle {
+    padding: 11px;
+    margin-bottom: 18px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.showcase-section {
+    border: 1px solid #d8d8d8;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.showcase-section h2 {
+    margin: 0;
+    padding: 11px 20px;
+    background-color: #3d3d43;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+/* =========================
+   Button Section
+   ========================= */
+
+.button-showcase {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    padding: 20px 26px 15px;
+}
+
+.button-example {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 11px;
+}
+
+.button-example span {
+    font-size: 17px;
+    color: #242424;
+}
+
+
+/* =========================
+   Card Section
+   ========================= */
+
+.card-section {
+    margin-top: 17px;
+}
+
+.card-showcase {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 46px;
+    padding: 18px 34px 15px;
+    align-items: stretch;
+}
+
+.card-example {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+}
+
+.card-example > span {
+    font-size: 17px;
+    color: #242424;
+}
+
+
+/* =========================
+   Responsive Layout
+   ========================= */
+
+@media (max-width: 1200px) {
+    .button-showcase {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .card-showcase {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .button-showcase {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 20px;
+    }
+
+    .card-showcase {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 20px;
+    }
+}

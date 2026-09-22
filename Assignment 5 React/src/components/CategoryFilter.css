@@ -1,0 +1,46 @@
+/* =========================
+   Category Filter
+   ========================= */
+
+.category-filter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* =========================
+   Category Option
+   ========================= */
+
+.category-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: #252525;
+
+    font-family: Consolas, sans-serif;
+    font-size: 12px;
+    line-height: 1.2;
+
+    cursor: pointer;
+}
+
+.category-option input {
+    width: 14px;
+    height: 14px;
+
+    margin: 0;
+
+    accent-color: #ff5405;
+
+    cursor: pointer;
+}
+
+.category-option span {
+    user-select: none;
+}
+
+.category-option:hover span {
+    color: #ff5405;
+}

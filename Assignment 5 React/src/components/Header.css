@@ -1,0 +1,123 @@
+/* =========================
+   Header
+   ========================= */
+
+.site-header {
+    width: 100%;
+    min-height: 58px;
+
+    padding: 0 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #1f1f1f;
+}
+
+/* =========================
+   Logo
+   ========================= */
+
+.site-logo {
+    color: #ff5405;
+
+    font-family: "Industry Test", sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+
+    letter-spacing: 0.3px;
+    text-decoration: none;
+}
+
+/* =========================
+   Search
+   ========================= */
+
+.search-bar {
+    display: flex;
+    align-items: stretch;
+
+    width: 365px;
+    height: 32px;
+}
+
+.search-bar input {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 0 10px;
+
+    border: none;
+    outline: none;
+
+    background-color: #ffffff;
+    color: #222222;
+
+    font-family: Consolas, sans-serif;
+    font-size: 12px;
+}
+
+.search-bar button {
+    width: 48px;
+
+    padding: 0;
+
+    border: none;
+
+    background-color: #ff5405;
+    color: #ffffff;
+
+    font-size: 0;
+
+    cursor: pointer;
+}
+
+/* =========================
+   Header Actions
+   ========================= */
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    color: #ffffff;
+
+    font-family: Consolas, sans-serif;
+    font-size: 12px;
+}
+
+.header-actions span {
+    white-space: nowrap;
+}
+
+/* =========================
+   Responsive
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .site-header {
+        gap: 20px;
+        padding: 12px 18px;
+        flex-wrap: wrap;
+    }
+
+    .search-bar {
+        order: 3;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .site-logo {
+        font-size: 15px;
+    }
+
+    .header-actions {
+        font-size: 11px;
+    }
+}
