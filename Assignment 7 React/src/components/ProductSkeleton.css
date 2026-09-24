@@ -1,0 +1,161 @@
+.product-skeleton {
+    min-height: 480px;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border: 1px solid #eef0f2;
+    border-radius: 2px;
+
+    box-shadow: 0px 4px 6px -1px #0000001a;
+}
+
+
+/* =========================
+   Image
+   ========================= */
+
+.skeleton-image {
+    width: 100%;
+    height: 220px;
+
+    background: #eeeeee;
+}
+
+
+/* =========================
+   Content
+   ========================= */
+
+.skeleton-content {
+    flex: 1;
+
+    padding: 18px 20px 22px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* =========================
+   Product Name
+   ========================= */
+
+.skeleton-name {
+    width: 80%;
+    height: 18px;
+
+    background: #eeeeee;
+}
+
+
+/* =========================
+   Product Details
+   ========================= */
+
+.skeleton-details {
+    width: 100%;
+
+    margin-top: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* =========================
+   Category
+   ========================= */
+
+.skeleton-category {
+    width: 50%;
+    height: 11px;
+
+    margin-bottom: 14px;
+
+    background: #eeeeee;
+}
+
+
+/* =========================
+   Rating
+   ========================= */
+
+.skeleton-rating {
+    width: 85px;
+    height: 14px;
+
+    margin-bottom: 15px;
+
+    background: #eeeeee;
+}
+
+
+/* =========================
+   Price
+   ========================= */
+
+.skeleton-price {
+    width: 70px;
+    height: 17px;
+
+    margin-bottom: 16px;
+
+    background: #eeeeee;
+}
+
+
+/* =========================
+   Button
+   ========================= */
+
+.skeleton-button {
+    width: 168px;
+    height: 52px;
+
+    margin-top: 12px;
+
+    border-radius: 2px;
+
+    background: #eeeeee;
+}
+
+
+/* =========================
+   Tablet
+   ========================= */
+
+@media (max-width: 768px) {
+    .product-skeleton {
+        min-height: 510px;
+    }
+
+    .skeleton-image {
+        height: 210px;
+    }
+}
+
+
+/* =========================
+   Mobile
+   ========================= */
+
+@media (max-width: 480px) {
+    .product-skeleton {
+        min-height: 500px;
+    }
+
+    .skeleton-image {
+        height: 230px;
+    }
+
+    .skeleton-button {
+        width: 180px;
+    }
+}
