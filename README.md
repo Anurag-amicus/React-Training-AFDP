@@ -118,3 +118,27 @@ src/
 ├── App.css
 ├── index.css
 └── main.tsx
+```
+
+# Update of Assignment 7
+
+## React Product API Integration
+
+A React + TypeScript product listing application integrated with the **DummyJSON Products API**.
+
+### What Was Implemented
+
+* Integrated DummyJSON Products API using `fetch`.
+* Created a reusable generic API request utility with `ApiResult<T>`.
+* Added `ApiService` for API-specific requests.
+* Added TypeScript types for API and application product data.
+* Added data transformation from API products to existing `ProductCard` props.
+* Implemented loading state with product skeletons.
+* Implemented error state with Retry functionality.
+* Added `AbortController` for request cleanup.
+* Added API-powered products to:
+
+  * Product Listing page
+  * Featured Products carousel
+* Replaced static product data with real API data.
+
