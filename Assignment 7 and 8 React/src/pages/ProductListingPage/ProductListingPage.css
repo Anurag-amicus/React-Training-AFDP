@@ -1,0 +1,422 @@
+.product-page {
+    width: 100%;
+    min-height: 100vh;
+
+    background-color: var(--white);
+}
+
+.product-listing {
+    width: 100%;
+
+    margin: 0 auto;
+    padding: 38px 24px 60px;
+}
+
+
+/* =========================
+   Listing Heading
+   ========================= */
+
+.listing-heading {
+    margin-bottom: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.listing-heading h1 {
+    margin: 0;
+
+    color: var(--charcoal);
+
+    font-family: "Industry Test", Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+
+/* =========================
+   Refresh Button
+   ========================= */
+
+.refresh-button {
+    width: 120px;
+    height: 42px;
+
+    padding: 10px 16px;
+
+    border-radius: 2px;
+
+    font-family: "Industry Test", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+
+    line-height: 1;
+    letter-spacing: 0.4px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================
+   Listing Layout
+   ========================= */
+
+.listing-layout {
+    display: grid;
+
+    grid-template-columns: 200px minmax(0, 1fr);
+
+    gap: 26px;
+
+    align-items: start;
+}
+
+
+/* =========================
+   Filter Sidebar
+   ========================= */
+
+.filter-sidebar {
+    width: 100%;
+
+    margin-top: 36px;
+    padding: 12px;
+
+    border: 1px solid var(--border);
+
+    background-color: var(--white);
+}
+
+
+/* =========================
+   Filter Header
+   ========================= */
+
+.filter-sidebar-header {
+    width: 100%;
+
+    margin: 0;
+    padding: 0 0 7px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border: none;
+    border-bottom: 2px solid var(--orange);
+
+    background: transparent;
+
+    color: var(--charcoal);
+
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+
+    text-align: left;
+
+    cursor: pointer;
+}
+
+.filter-toggle {
+    display: none;
+}
+
+
+/* =========================
+   Filter Content
+   ========================= */
+
+.filter-sidebar-content {
+    display: block;
+}
+
+.filter-group {
+    padding-top: 10px;
+}
+
+.filter-group h3 {
+    margin: 0 0 10px;
+
+    color: var(--charcoal);
+
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* =========================
+   Product Section
+   ========================= */
+
+.product-section {
+    min-width: 0;
+}
+
+.product-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 16px;
+}
+
+
+/* =========================
+   Product Information
+   ========================= */
+
+.product-info {
+    width: 100%;
+
+    min-height: 24px;
+
+    margin-bottom: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.result-count {
+    margin: 0;
+
+    font-family: Consolas, sans-serif;
+    font-size: 14px;
+
+    line-height: 1;
+}
+
+.sort-status {
+    margin: 0;
+
+    color: var(--muted);
+
+    font-family: Consolas, sans-serif;
+    font-size: 12px;
+
+    line-height: 1.2;
+
+    text-align: right;
+}
+
+.sort-status strong {
+    color: var(--charcoal);
+    font-weight: 700;
+}
+
+
+/* =========================
+   Empty State
+   ========================= */
+
+.empty-state {
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 1px solid var(--border);
+    text-align: center;
+}
+
+.empty-state-title {
+    margin: 0;
+    color: var(--charcoal);
+    font-family: Consolas, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.empty-state-message {
+    margin: 0;
+    color: var(--muted);
+    font-family: Consolas, sans-serif;
+    font-size: 14px;
+}
+
+
+/* =========================
+   Error State
+   ========================= */
+
+.error-state {
+    min-height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 18px;
+
+    border: 1px solid var(--border);
+
+    color: var(--muted);
+
+    font-family: Consolas, sans-serif;
+    font-size: 16px;
+
+    text-align: center;
+}
+
+.error-state p {
+    margin: 0;
+}
+
+.retry-button {
+    width: 120px;
+    height: 42px;
+
+    padding: 10px 16px;
+
+    border-radius: 2px;
+
+    font-family: "Industry Test", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+
+    line-height: 1;
+    letter-spacing: 0.4px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================
+   Tablet
+   ========================= */
+
+@media (max-width: 1100px) {
+    .product-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+
+/* =========================
+   Mobile / Tablet
+   ========================= */
+
+@media (max-width: 800px) {
+
+    .listing-layout {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+
+    /* =========================
+       Mobile Filter Sidebar
+       ========================= */
+
+    .filter-sidebar {
+        margin-top: 0;
+
+        padding: 0;
+
+        border: 1px solid var(--border);
+    }
+
+    .filter-sidebar-header {
+        min-height: 44px;
+
+        padding: 0 12px;
+
+        border-bottom: none;
+
+        font-family: Consolas, sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    .filter-toggle {
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        width: 20px;
+        height: 20px;
+
+        color: var(--orange);
+
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+
+        line-height: 1;
+    }
+
+    .filter-sidebar.filters-open
+    .filter-sidebar-header {
+        border-bottom: 2px solid var(--orange);
+    }
+
+    .filter-sidebar-content {
+        display: none;
+
+        padding: 0 12px 12px;
+    }
+
+    .filter-sidebar.filters-open
+    .filter-sidebar-content {
+        display: block;
+    }
+}
+
+
+/* =========================
+   Small Mobile
+   ========================= */
+
+@media (max-width: 520px) {
+
+    .product-listing {
+        padding: 28px 16px 40px;
+    }
+
+    .listing-heading {
+        align-items: flex-start;
+
+        gap: 16px;
+    }
+
+    .listing-heading h1 {
+        font-size: 22px;
+    }
+
+    .refresh-button {
+        width: 100px;
+        height: 38px;
+
+        padding: 8px 12px;
+
+        font-size: 12px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-info {
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+    .sort-status {
+        text-align: right;
+    }
+}

@@ -120,9 +120,7 @@ src/
 └── main.tsx
 ```
 
-# Update of Assignment 7
-
-## React Product API Integration
+## Update of Assignment 7 - React Product API Integration
 
 A React + TypeScript product listing application integrated with the **DummyJSON Products API**.
 
@@ -142,3 +140,26 @@ A React + TypeScript product listing application integrated with the **DummyJSON
   * Featured Products carousel
 * Replaced static product data with real API data.
 
+## Update of Assignment 8 - Product Listing with Search & Filter
+
+Extended the product listing page with interactive search, filtering, sorting, and product status information.
+
+* Added **debounced live search** by product name.
+* Added **category filtering** using checkboxes.
+* Added **sorting** by:
+
+  * Name — A-Z / Z-A
+  * Price — Low to High / High to Low
+  * Ratings — Low to High / High to Low
+* Combined search, category filters, and sorting so they work together.
+* Added **result count** and active sort information.
+* Added an **empty state** when no products match the selected criteria.
+* Added **SALE** and **NEW** product badges.
+* Added discount handling:
+
+  * Products with discounts **greater than 10%** receive a calculated `discountedPrice`.
+  * The discount percentage is displayed beside the original price.
+  * Original price is shown with a strikethrough.
+  * Total price calculation uses the discounted price when applicable.
+* Added a reusable **`SortFilter` component** for the sorting controls.
+* Kept filtering and sorting logic inside `ProductListingPage`.
