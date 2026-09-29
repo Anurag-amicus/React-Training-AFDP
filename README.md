@@ -163,3 +163,76 @@ Extended the product listing page with interactive search, filtering, sorting, a
   * Total price calculation uses the discounted price when applicable.
 * Added a reusable **`SortFilter` component** for the sorting controls.
 * Kept filtering and sorting logic inside `ProductListingPage`.
+
+
+## Update of Assignment 9 — Checkout Shipping Form
+
+Implemented a complete checkout shipping form with **two different form-handling approaches**: Controlled React State and React Hook Form.
+
+### What was implemented
+
+* Created a complete shipping information form with:
+
+  * Full Name
+  * Email
+  * Phone Number
+  * Street Address
+  * Apartment / Suite
+  * City
+  * State / Province
+  * ZIP / Postal Code
+  * Country
+  * Shipping Method
+
+### Controlled Form
+
+* Managed all form values using a **single `formData` state object**.
+* Implemented a **generic `handleChange`** for all input and select fields.
+* Added field-level validation with reusable validation functions.
+* Implemented validation for:
+
+  * Required fields
+  * Full name length and whitespace
+  * Email format
+  * 10-digit phone number
+  * Minimum street address length
+  * 5–6 digit ZIP code
+  * Country, state, city, and shipping method selection
+* Added touched-field and submit-attempt validation behavior.
+* Displayed validation errors directly below fields.
+* Added dynamic **Country → State → City** loading using the CountriesNow API.
+* Reset dependent fields when their parent selection changes.
+* Added loading and API error states for location dropdowns.
+* Added shipping method radio buttons.
+* Disabled **Place Order** until the form is valid.
+* Logged submitted form data and displayed a success message.
+* Reset the form after successful submission.
+
+### React Hook Form
+
+* Implemented the same checkout form using **React Hook Form**.
+* Used:
+
+  * `useForm`
+  * `register`
+  * `handleSubmit`
+  * `formState.errors`
+  * `formState.isValid`
+  * `reset`
+* Removed manual state management for form values.
+* Added validation rules directly through `register`.
+* Configured validation with `onBlur`.
+* Reused the CountriesNow API integration for Country → State → City.
+* Reset State and City when Country changes.
+* Reset City when State changes.
+* Added the same shipping method radio group and validation.
+* Used React Hook Form's `isValid` to control the Place Order button.
+* Logged submitted data, displayed a success message, and reset the form after submission.
+
+### Checkout Integration
+
+* Created separate checkout pages for the **Controlled** and **React Hook Form** implementations.
+* Reused the same `OrderSummary` component for both forms.
+* Added configurable form IDs so the Place Order button submits the correct checkout form.
+* Shared the same `CheckoutPage.css` styling between both implementations.
+* Added reusable form validation and API service functionality rather than duplicating logic.
