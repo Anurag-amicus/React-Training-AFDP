@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "Industry Test";
+    src: url("./assets/fonts/IndustryTest-Black.otf") format("opentype");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --black: #111111;
+    --charcoal: #2c2e35;
+    --orange: #ff5405;
+    --border: #d9d9d9;
+    --muted: #666666;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+
+    font-family: Consolas, sans-serif;
+
+    overflow-x: hidden;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+}

@@ -1,0 +1,220 @@
+/* =========================
+   Sort Filter
+   ========================= */
+
+.sort-filter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* =========================
+   Sort Option Wrapper
+   ========================= */
+
+.sort-option-wrapper {
+    width: 100%;
+}
+
+
+/* =========================
+   Main Sort Option
+   ========================= */
+
+.sort-option {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    color: #252525;
+
+    font-family: Consolas, sans-serif;
+    font-size: 12px;
+    line-height: 1.2;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   Main Option Hover
+   ========================= */
+
+.sort-option:hover {
+    color: #ff5405;
+}
+
+
+/* =========================
+   Radio Button
+   ========================= */
+
+.sort-option input,
+.sort-sub-options input {
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 14px;
+    height: 14px;
+
+    flex-shrink: 0;
+
+    margin: 0;
+    padding: 0;
+
+    display: inline-block;
+
+    background-color: #ffffff;
+
+    border: 1px solid #999999;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* =========================
+   Radio Hover
+   ========================= */
+
+.sort-option input:hover,
+.sort-sub-options input:hover {
+    border-color: #ff5405;
+}
+
+
+/* =========================
+   Selected Radio
+   ========================= */
+
+.sort-option input:checked,
+.sort-sub-options input:checked {
+    border-color: #ff5405;
+
+    background-color: #ff5405;
+
+    box-shadow: inset 0 0 0 3px #ffffff;
+}
+
+
+/* =========================
+   Option Label
+   ========================= */
+
+.sort-option-label {
+    user-select: none;
+}
+
+
+/* =========================
+   Clear Button
+   ========================= */
+
+.sort-clear {
+    width: 20px;
+    height: 20px;
+
+    margin-left: auto;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    background: transparent;
+
+    color: #ff5405;
+
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.sort-clear:hover {
+    color: #cc4000;
+
+    transform: scale(1.1);
+}
+
+
+/* =========================
+   Sub Options
+   ========================= */
+
+.sort-sub-options {
+    max-height: 0;
+
+    margin-left: 22px;
+    padding-left: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+
+    overflow: hidden;
+
+    border-left: 2px solid transparent;
+
+    transform: translateY(-8px);
+
+    transition:
+        max-height 0.3s ease,
+        padding-top 0.3s ease,
+        padding-bottom 0.3s ease,
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.sort-sub-options.open {
+    max-height: 100px;
+
+    padding-top: 7px;
+    padding-bottom: 7px;
+
+    border-left-color: #ff5405;
+
+    transform: translateY(0);
+}
+
+
+/* =========================
+   Sub Option
+   ========================= */
+
+.sort-sub-options label {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    color: #252525;
+
+    font-family: Consolas, sans-serif;
+    font-size: 12px;
+    line-height: 1.2;
+
+    cursor: pointer;
+
+    transition: color 0.2s ease;
+}
+
+.sort-sub-options label:hover {
+    color: #ff5405;
+}

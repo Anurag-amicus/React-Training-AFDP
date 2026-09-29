@@ -1,0 +1,106 @@
+/* =========================
+   Category Section
+   ========================= */
+
+.category-section {
+    width: 100%;
+
+    padding: 30px 24px 30px;
+
+    background-color: #ffffff;
+}
+
+.category-container {
+    width: 100%;
+    max-width: 1150px;
+
+    margin: 0 auto;
+}
+
+.category-section .section-heading {
+    margin-bottom: 28px;
+}
+
+
+/* =========================
+   Category Buttons
+   ========================= */
+
+.category-pills {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    column-gap: 26px;
+    row-gap: 12px;
+}
+
+.category-pill {
+    width: 100% !important;
+    height: 52px !important;
+
+    padding: 10px 16px !important;
+
+    border: 2px solid #353535 !important;
+    border-radius: 5px !important;
+
+    background-color: #ffffff !important;
+    color: #ff5405 !important;
+
+    font-family: Consolas, sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+
+    letter-spacing: 0.1px !important;
+
+    white-space: nowrap;
+}
+
+.category-pill:hover {
+    background-color: #ff5405 !important;
+    border-color: #ff5405 !important;
+    color: #ffffff !important;
+}
+
+
+/* =========================
+   Responsive
+   ========================= */
+
+@media (max-width: 900px) {
+
+    .category-container {
+        max-width: 700px;
+    }
+
+    .category-pills {
+        grid-template-columns: repeat(2, 1fr);
+
+        column-gap: 18px;
+        row-gap: 12px;
+    }
+}
+
+
+@media (max-width: 520px) {
+
+    .category-section {
+        padding: 40px 18px 55px;
+    }
+
+    .category-container {
+        max-width: 100%;
+    }
+
+    .category-pills {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+    }
+
+    .category-pill {
+        height: 48px !important;
+
+        font-size: 13px !important;
+    }
+}

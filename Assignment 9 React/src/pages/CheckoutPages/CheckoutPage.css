@@ -1,0 +1,130 @@
+.checkout-page {
+    min-height: 100vh;
+    font-family: Arial;
+    background-color: #fff;
+}
+
+.checkout-page main {
+    padding: 0 26px 60px;
+}
+
+.checkout-page-container {
+    width: 100%;
+    max-width: 1340px;
+    margin: 0 auto;
+}
+
+/* Breadcrumb */
+
+.checkout-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 14px 0 18px;
+    font-size: 11px;
+    color: #555;
+}
+
+.checkout-breadcrumb span:last-child {
+    color: #333;
+}
+
+/* Page Heading */
+
+.checkout-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* Checkout Steps */
+
+.checkout-steps {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: 24px auto 22px;
+}
+
+.checkout-step {
+    flex: 1;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 14px;
+    border-radius: 18px;
+    background-color: #c9c9c9;
+    color: #222;
+    font-size: 12px;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+
+.checkout-step.active {
+    background-color: #ff5405;
+    color: #fff;
+}
+
+.checkout-step-line {
+    width: 46px;
+    height: 2px;
+    flex-shrink: 0;
+    background-color: #c9c9c9;
+    margin-inline: 6px;
+}
+
+/* Main Checkout Layout */
+
+.checkout-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.67fr) minmax(320px, 1fr);
+    gap: 28px;
+    align-items: start;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+    .checkout-steps {
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .checkout-layout {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .checkout-page main {
+        padding: 0 16px 40px;
+    }
+
+    .checkout-breadcrumb {
+        margin-top: 12px;
+    }
+
+    .checkout-title {
+        font-size: 19px;
+    }
+
+    .checkout-steps {
+        gap: 6px;
+        margin: 20px 0;
+    }
+
+    .checkout-step {
+        height: 32px;
+        padding: 0 8px;
+        font-size: 11px;
+    }
+
+    .checkout-step-line {
+        width: 14px;
+    }
+}

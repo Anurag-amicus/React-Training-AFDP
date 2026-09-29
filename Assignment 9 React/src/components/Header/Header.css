@@ -1,0 +1,455 @@
+/* =========================
+   Header
+   ========================= */
+
+.site-header {
+    width: 100%;
+
+    background-color: #ffffff;
+
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+/* =========================
+   Header Main
+   ========================= */
+
+.header-main {
+    width: 100%;
+    min-height: 72px;
+
+    padding: 0 28px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 0;
+
+    background-color: #ffffff;
+}
+
+
+/* =========================
+   Menu Button
+   ========================= */
+
+.menu-button {
+    width: 32px;
+    height: 32px;
+
+    margin-right: 16px;
+    padding: 6px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 6px;
+
+    background: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+.menu-button span {
+    display: block;
+
+    width: 30px;
+    height: 4px;
+
+    background-color: #ff5405;
+
+    border-radius: 4px;
+}
+
+
+/* =========================
+   Logo
+   ========================= */
+
+.site-logo {
+    width: 180px;
+
+    padding-left: 18px;
+
+    border-left: 1px solid #bdbdbd;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-decoration: none;
+
+    line-height: 1;
+
+    flex-shrink: 0;
+}
+
+.logo-online {
+    margin-left: 2px;
+
+    color: #555555;
+
+    font-family: "Industry Test Medium", sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+
+    letter-spacing: 3px;
+}
+
+.logo-express {
+    color: #444444;
+
+    font-family: "Industry Test", sans-serif;
+    font-size: 29px;
+    font-weight: 800;
+
+    letter-spacing: -0.5px;
+}
+
+
+/* =========================
+   Search
+   ========================= */
+
+.header-search {
+    min-width: 0;
+
+    flex: 0 1 650px;
+
+    max-width: 650px;
+
+    margin-left: auto;
+    margin-right: 36px;
+
+    height: 42px;
+
+    display: flex;
+    align-items: stretch;
+
+    border: 1px solid #d7d7d7;
+    border-radius: 4px;
+
+    background-color: #ffffff;
+
+    overflow: hidden;
+}
+
+.header-search input {
+    min-width: 0;
+
+    flex: 1;
+    padding: 0 14px ;
+
+    border: none;
+    outline: none;
+
+    color: #252525;
+
+    font-family: Consolas, sans-serif;
+    font-size: 13px;
+}
+
+.header-search input::placeholder {
+    color: #999999;
+}
+
+.search-button {
+    width: 48px;
+
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+}
+
+.search-icon {
+    color: #ff5405;
+
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+
+    line-height: 1;
+
+    transform: scaleX(-1);
+}
+
+
+/* =========================
+   Navigation
+   ========================= */
+
+.site-navigation {
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 24px;
+
+    flex-shrink: 0;
+}
+
+.header-navigation-item {
+    display: flex;
+    align-items: center;
+
+    color: #777777;
+
+    font-family: Consolas, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+    line-height: 1;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+}
+
+.header-navigation-item:hover {
+    color: #ff5405;
+}
+
+
+/* =========================
+   Header CTA
+   ========================= */
+
+.site-header .header-cta {
+    width: 105px;
+    height: 38px;
+
+    flex-shrink: 0;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 0.3px;
+}
+
+
+/* =========================
+   Sign In
+   ========================= */
+
+.sign-in {
+    gap: 7px;
+}
+
+.sign-in-icon {
+    color: #777777;
+
+    font-family: Arial, sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+
+    line-height: 1;
+}
+
+.sign-in:hover .sign-in-icon {
+    color: #ff5405;
+}
+
+
+/* =========================
+   Cart
+   ========================= */
+
+.cart-item {
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+    margin-right: 6px;
+
+    border: none;
+    background: transparent;
+
+    color: #777777;
+
+    cursor: pointer;
+}
+
+.cart-item:hover {
+    color: #ff5405;
+}
+
+.cart-icon {
+    font-size: 21px;
+
+    line-height: 1;
+}
+
+.cart-count {
+    font-family: Consolas, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+
+    line-height: 1;
+}
+
+
+/* =========================
+   Tablet
+   ========================= */
+
+@media (max-width: 1100px) {
+
+    .header-main {
+        padding: 0 20px;
+    }
+
+    .site-logo {
+        width: 160px;
+    }
+
+    .logo-express {
+        font-size: 25px;
+    }
+
+    .header-search {
+        margin-left: 24px;
+        margin-right: 24px;
+        border-radius: 2px;
+    }
+
+    .site-navigation {
+        gap: 16px;
+    }
+
+    .sign-in {
+        display: none;
+    }
+}
+
+
+/* =========================
+   Mobile
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .header-main {
+        min-height: 72px;
+
+        padding: 0 16px;
+    }
+
+    .menu-button {
+        width: 32px;
+        height: 32px;
+
+        margin-right: 10px;
+    }
+
+    .menu-button span {
+        width: 26px;
+        height: 3px;
+    }
+
+    .site-logo {
+        width: auto;
+
+        padding-left: 12px;
+    }
+
+    .logo-online {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+    .logo-express {
+        font-size: 21px;
+    }
+
+    .header-search {
+        margin-left: 16px;
+        margin-right: 16px;
+        border-radius: 2px;
+        height: 38px;
+    }
+
+    .header-search input {
+        font-size: 12px;
+    }
+
+    .search-button {
+        width: 42px;
+    }
+
+    .search-icon {
+        font-size: 25px;
+    }
+
+    .header-cta {
+        display: none;
+    }
+
+    .site-navigation {
+        gap: 12px;
+    }
+}
+
+
+/* =========================
+   Small Mobile
+   ========================= */
+
+@media (max-width: 520px) {
+
+    .header-main {
+        min-height: 72px;
+
+        padding: 0 12px;
+    }
+
+    .menu-button {
+        margin-right: 6px;
+    }
+
+    .site-logo {
+        padding-left: 8px;
+    }
+
+    .logo-online {
+        font-size: 8px;
+        letter-spacing: 1.5px;
+    }
+
+    .logo-express {
+        font-size: 18px;
+    }
+
+    .header-search {
+        margin-left: 10px;
+        margin-right: 10px;
+
+        height: 36px;
+    }
+
+    .header-search input {
+        padding: 0 10px;
+
+        font-size: 11px;
+    }
+
+    .search-button {
+        width: 36px;
+    }
+
+    .search-icon {
+        font-size: 23px;
+    }
+}
